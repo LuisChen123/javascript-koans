@@ -71,10 +71,7 @@ describe("About Applying What We Have Learnt", function () {
     function fiveAndThree(x) {
       return x%3 ===0 || x%5 === 0
     }
-   
-    
-    // var sum = anArray.chain().filter(fiveAndThree).value();    /* try chaining range() and reduce() */
-  //  var k = _.chain().reverse().value();
+      /* try chaining range() and reduce() */
 
     var k = _(_.range(1000)).chain().filter(fiveAndThree).reduce(addUp).value();
    
